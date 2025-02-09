@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang= “pt-br”>
+<head>
+    <link rel="stylesheet" href="style.css>"
+    <meta charset= “UTF-8”>
+    <meta name = “viewport” contente= “width=device-width,initial-scale=1.0”>
+    <title> PAINEL ADMINISTRATIVO </title>
+</head>
+<body>
+<heard>
+    <h3> PAINEL ADMINISTRATIVO</h3>
+    <button> Página Inicial </button>
+    <button> Usuários </button>
+    <button> Eventos </button>
+    <button> Sair </button>
+</heard>
+    <button> Voltar </button>
+    <h3>CADASTRO DO EVENTO</h3>
+       <form action="destino.php" method="post">
+        <label for="nome">Digite o nome do evento:</label>
+        <input type="text" id="nome" name="nome" </input><br>
+
+        <label for="data">Data do Evento:</label>
+        <input type="data" id="data" name="data"</input><br>
+
+        <label for="Informações"> Informações sobre evento:</label>
+        <input type="information" id="informação" name="informação"</input><br>
+        <input type= “submit” value= "CADASTRAR EVENTO">
+        </form>
+</body>
+</html><br>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset= “UTF-8”>
+    <meta name= “viewport” contente=”width=device, initial-scale=1.0”>
+    <title> Tabela de Eventos Cadastrados </title>
+    <style>
+        table {
+                width: 100%:
+                border-collapse: colapse;
+              }
+        th,td {
+                border: 1px solid rgb(120, 44, 170);
+                padding: 8px;
+                text-align: left;
+              }
+        th  {
+                background-color:#DDC1F6;
+              }
+     </style>
+</head>
+<body>
+    <h3> EVENTOS CADASTRADOS </h3>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome do Evento</th>
+            <th>Data</th>
+            <th>Local</th>
+            <th>Descrição</th>
+            <button> edit </button>
+            <button> delete </button>    
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Bloquinho de Carnaval</th>
+            <th>17/04/2025</th>
+            <th>Rio de Janeiro</th>
+            <th>Um ressaca de carnaval</th>
+            <button> edit </button>
+            <button> delete </button>    
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>Congresso de Educação</th>
+            <th>04/03/2025</th>
+            <th>Salvador</th>
+            <th>Uma novo conceito em educação</th>
+            <button> edit </button>
+            <button> delete </button>    
+
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Teatro Infantil</th>
+            <th>16/02/2025</th>
+            <th>Fortaleza</th>
+            <th>Adaptação do Livro O Pequeno Princípe</th>
+            <button> edit </button>
+            <button> delete </button>    
+
+        </tr>
+</table>
+</body>
+</html>

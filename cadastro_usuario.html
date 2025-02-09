@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css>"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> PAINEL ADMINISTRATIVO </title>
+</head>
+<body>
+<heard>
+    <h3>PAINEL ADMINISTRATIVO</h3h><br>
+    <button> Página Inicial </button>
+    <button> Usuários</button>
+    <button> Eventos </button>
+    <button> Sair </button>
+</heard>
+    <button> Voltar </button>
+    <h3>  CADASTRO DO USUÁRIO </h3>
+    <form action= "destino.php" method= "post">
+        <label for="nome"> Nome do usuário:</label>
+        <input type="text" id="nome" name="nome"</input><br>
+
+        <label for="E-mail"> E-mail:</label>
+        <input type="E-mail" id="E-mail" name="E-mail"</input><br>
+
+        <label for="senha"> Senha:</label>
+        <input type="password" id="senha" name="senha"</input><br><br>
+        <input type= “submit” value="CADASTRAR USUÁRIO">
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title> Tabela de Usuários Cadastrados </title>
+    <style>
+            table {
+                    width: 100%:
+                    border-collapse: colapse;
+                  }
+            th,td {
+                    border: 1px solid rgb(197, 40, 184);
+                    padding: 8px;
+                    text-align: left;
+                  }
+            th    {
+                    background-color:#DDC1F6;
+                  }
+    </style>
+</head>
+<body>
+    <h3> USUÁRIOS CADASTRADOS </h3>
+     <table>
+            <tr>
+                <th>ID</th>
+                <th>Nome do Usuário</th>
+                <button> edit </button>
+                <button> delete </button>    
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Marcos de Oliveira Pires</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Ivana Maria Albuquerque</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>João Paulo Rodrigues</th>
+            </th>
+            </tr>
+</table>
+</body>
+</html>
