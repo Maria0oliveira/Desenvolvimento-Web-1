@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="style.css>"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="estilo2.css">
     <title> PAINEL ADMINISTRATIVO </title>
 </head>
 <body>
 <heard>
     <h3>PAINEL ADMINISTRATIVO</h3h><br>
-    <button> Página Inicial </button>
+    <a href="pagina_inicial.html"><button> Página Inicial </button></a>
     <button> Usuários</button>
-    <button> Eventos </button>
-    <button> Sair </button>
+    <a href="pagina_cadastro.html"><button> Eventos </button></a>
+    <a href="login.html"><button> Sair </button></a>
 </heard>
     <button> Voltar </button>
+    <div class="container">
+    <div class="login-box">
     <h3>  CADASTRO DO USUÁRIO </h3>
     <form action= "destino.php" method= "post">
         <label for="nome"> Nome do usuário:</label>
@@ -27,9 +29,10 @@
         <input type="password" id="senha" name="senha"</input><br><br>
         <input type= “submit” value="CADASTRAR USUÁRIO">
     </form>
+    </div>
+</div>
 </body>
 </html>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -52,27 +55,36 @@
     </style>
 </head>
 <body>
+    <div class="container">
+    <div class="login-box">
     <h3> USUÁRIOS CADASTRADOS </h3>
      <table>
             <tr>
                 <th>ID</th>
                 <th>Nome do Usuário</th>
-                <button> edit </button>
-                <button> delete </button>    
+                <th>Ação</th>   
             </tr>
             <tr>
                 <th>1</th>
                 <th>Marcos de Oliveira Pires</th>
+                <th><button> edit </button>
+                    <button> delete </button></th> 
             </tr>
             <tr>
                 <th>2</th>
                 <th>Ivana Maria Albuquerque</th>
+                <th><button> edit </button>
+                    <button> delete </button></th> 
             </tr>
             <tr>
                 <th>3</th>
                 <th>João Paulo Rodrigues</th>
+                <th><button> edit </button>
+                <button> delete </button></th> 
             </th>
             </tr>
 </table>
+    </div>
+</div>
 </body>
 </html>

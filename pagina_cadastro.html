@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang= “pt-br”>
 <head>
-    <link rel="stylesheet" href="style.css>"
     <meta charset= “UTF-8”>
     <meta name = “viewport” contente= “width=device-width,initial-scale=1.0”>
+    <link rel="stylesheet" href="estilo2.css">
     <title> PAINEL ADMINISTRATIVO </title>
 </head>
 <body>
-<heard>
+<heard>        
+    <header class="header"> 
+    <nav class="navbar"> 
+    <ul class="nav-links">
     <h3> PAINEL ADMINISTRATIVO</h3>
-    <button> Página Inicial </button>
-    <button> Usuários </button>
+    <a href="pagina_inicial.html"><button> Página Inicial </button></a>
+    <a href="cadastro_usuario.html"><button> Usuários </button></a>
     <button> Eventos </button>
-    <button> Sair </button>
+    <a href="login.html"><button> Sair </button></a>
+</ul> 
+</nav>
 </heard>
+    <main class="main-content"> 
+    <section class="content">
     <button> Voltar </button>
+    <div class="container">
+    <div class="login-box">
     <h3>CADASTRO DO EVENTO</h3>
        <form action="destino.php" method="post">
         <label for="nome">Digite o nome do evento:</label>
@@ -27,9 +36,12 @@
         <input type="information" id="informação" name="informação"</input><br>
         <input type= “submit” value= "CADASTRAR EVENTO">
         </form>
+    </div>
+</div>
+</section> 
+</main>
 </body>
 </html><br>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -52,6 +64,8 @@
      </style>
 </head>
 <body>
+    <div class="container">
+    <div class="login-box">
     <h3> EVENTOS CADASTRADOS </h3>
     <table>
         <tr>
@@ -60,8 +74,7 @@
             <th>Data</th>
             <th>Local</th>
             <th>Descrição</th>
-            <button> edit </button>
-            <button> delete </button>    
+            <th>Ação</th>   
         </tr>
         <tr>
             <th>1</th>
@@ -69,8 +82,8 @@
             <th>17/04/2025</th>
             <th>Rio de Janeiro</th>
             <th>Um ressaca de carnaval</th>
-            <button> edit </button>
-            <button> delete </button>    
+            <th><button>edit </button>
+            <button> delete </button></th>    
         </tr>
         <tr>
             <th>2</th>
@@ -78,8 +91,8 @@
             <th>04/03/2025</th>
             <th>Salvador</th>
             <th>Uma novo conceito em educação</th>
-            <button> edit </button>
-            <button> delete </button>    
+            <th><button> edit </button>
+            <button> delete </button></th>  
 
         </tr>
         <tr>
@@ -88,10 +101,12 @@
             <th>16/02/2025</th>
             <th>Fortaleza</th>
             <th>Adaptação do Livro O Pequeno Princípe</th>
-            <button> edit </button>
-            <button> delete </button>    
+            <th><button> edit </button>
+            <button> delete </button></th>   
 
         </tr>
 </table>
+    </div>
+</div>
 </body>
 </html>

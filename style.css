@@ -1,16 +1,62 @@
-{
+@import url(style.css);
+/*para não mudar no navegador*/
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-body{
-    background-color:#DDC1F6;
-    color: #f3d0ed;            
+/*define cor, centraliza conteudo*/
+body {
+    background-color: #fad2f1;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
-header{
-    background-color: #DDC1F6;
-    color: #000;
+.main-content {
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo centralmente horizontalmente */
+    align-items: center;     /* Alinha o conteúdo centralmente verticalmente */
+    height: 80%;             /* Define a altura do main como 80% da altura da tela */
     text-align: center;
-    padding: 0;
+}  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f58cde;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+}
+.search-bar{
+    display: flex;
+    background:white;
+    border-radius: 20px;
+    padding: 5px;
+}
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 15px;
+}
+.galeria{
+    display:flex;
+}
+.galeria img{
+    width: 250px;
+    height: 200px;
+
+}
+footer {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: #e88acc;
+    color: rgb(15, 14, 15);
+    padding: 10px;
+    margin-top: 20px;
 }

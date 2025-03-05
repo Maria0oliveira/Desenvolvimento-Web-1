@@ -1,0 +1,45 @@
+@import url(estilo.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fad2f1;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+
+  }
+  .container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa toda a altura da tela */
+}
+.login {
+    background-color: #fad2f1;
+    padding: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+  header {
+    background-color: #fbf8f1; /* Cor de fundo preferida */
+    color: #333; /* Cor do texto */
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 3px solid #EDB2B2; /* Detalhe combinando com a Purrfect Coffee */
+}
+/* Configuração da barra de navegação */ 
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Alinha os itens à direita */ 
+  align-items: center;
+   height: 50px;
+   } 
+  
